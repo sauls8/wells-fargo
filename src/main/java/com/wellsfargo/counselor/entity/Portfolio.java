@@ -6,7 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToOne;
+
 
 @Entity
 public class Portfolio {
@@ -16,7 +16,6 @@ public class Portfolio {
     private long portfolioId;
 
     @ManyToOne
-    @JoinColumn(name = "clientId")
     private Client client;
 
     @Column(nullable = false)
