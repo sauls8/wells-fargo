@@ -51,6 +51,9 @@ public class Client {
     public Long getClientId() {
         return clientId;
     }
+    public Advisor getAdvisor(){
+        return this.advisor;
+    }
 
     public String getFirstName() {
         return firstName;
